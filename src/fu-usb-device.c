@@ -8,6 +8,8 @@
 
 #include "config.h"
 
+#include <xmlb.h>
+
 #include "fu-usb-device-private.h"
 
 /**

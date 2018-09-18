@@ -10,6 +10,7 @@
 
 #include <fwupd.h>
 #include <gmodule.h>
+#include <xmlb.h>
 #include <errno.h>
 #include <string.h>
 #include <unistd.h>

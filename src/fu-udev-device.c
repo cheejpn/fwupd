@@ -8,6 +8,7 @@
 
 #include "config.h"
 
+#include <xmlb.h>
 #include <string.h>
 
 #include "fu-udev-device-private.h"

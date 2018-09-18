@@ -11,6 +11,7 @@
 #include <glib.h>
 #include <gio/gio.h>
 #include <string.h>
+#include <xmlb.h>
 
 #include "fu-common.h"
 #include "fu-common-guid.h"
