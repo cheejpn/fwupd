@@ -21,8 +21,7 @@
 #include <stdlib.h>
 #include <libsoup/soup.h>
 #include <unistd.h>
-
-#include "xb-silo.h"
+#include <xmlb.h>
 
 #include "fu-history.h"
 #include "fu-plugin-private.h"

@@ -13,9 +13,7 @@
 #include <libgcab.h>
 #include <stdlib.h>
 #include <string.h>
-
-#include "xb-builder.h"
-#include "xb-silo-query.h"
+#include <xmlb.h>
 
 #include "fu-common-cab.h"
 #include "fu-common-guid.h"

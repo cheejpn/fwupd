@@ -9,9 +9,7 @@
 #include "config.h"
 
 #include <libgcab.h>
-
-#include "xb-builder.h"
-#include "xb-silo-query.h"
+#include <xmlb.h>
 
 #include "fu-common-cab.h"
 #include "fu-common.h"

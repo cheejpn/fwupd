@@ -15,6 +15,7 @@
 #include <fnmatch.h>
 #include <string.h>
 #include <sys/utsname.h>
+#include <xmlb.h>
 
 #include "fwupd-common-private.h"
 #include "fwupd-enums-private.h"
@@ -22,9 +23,6 @@
 #include "fwupd-release-private.h"
 #include "fwupd-remote-private.h"
 #include "fwupd-resources.h"
-
-#include "xb-builder.h"
-#include "xb-silo-query.h"
 
 #include "fu-common-cab.h"
 #include "fu-common-guid.h"

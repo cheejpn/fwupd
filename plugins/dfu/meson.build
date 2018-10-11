@@ -71,6 +71,7 @@ dfu_tool = executable(
     include_directories('../../libfwupd'),
   ],
   dependencies : [
+    libxmlb,
     giounix,
     libm,
     gusb,
@@ -121,6 +122,7 @@ if get_option('tests')
       include_directories('../../src'),
     ],
     dependencies : [
+      libxmlb,
       gio,
       gusb,
       gudev,

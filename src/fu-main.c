@@ -14,13 +14,12 @@
 #include <locale.h>
 #include <polkit/polkit.h>
 #include <stdlib.h>
+#include <xmlb.h>
 
 #include "fwupd-device-private.h"
 #include "fwupd-release-private.h"
 #include "fwupd-remote-private.h"
 #include "fwupd-resources.h"
-
-#include "xb-silo-query.h"
 
 #include "fu-common.h"
 #include "fu-debug.h"

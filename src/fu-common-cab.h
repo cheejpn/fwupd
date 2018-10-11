@@ -7,7 +7,7 @@
 #ifndef __FU_COMMON_CAB_H
 #define __FU_COMMON_CAB_H
 
-#include "xb-silo.h"
+#include <xmlb.h>
 
 XbSilo		*fu_common_cab_build_silo		(GBytes		*blob,
 							 guint64	 size_max,

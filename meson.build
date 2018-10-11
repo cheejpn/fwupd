@@ -199,6 +199,18 @@ endif
 gcab = find_program('gcab', required : true)
 bashcomp = dependency('bash-completion', required: false)
 
+libxmlb = dependency('xmlb', version : '>= 0.1.1', required: false)
+if libxmlb.found()
+  conf.set('HAVE_XMLB_SYSTEM_WIDE', '1')
+  libxmlbstatic = []
+  xmlbstaticincs = []
+else
+  libxmlb = []
+  xmlbstaticincs = include_directories('../libxmlb/src')
+  subdir('libxmlb/src')
+  message('Using submodule libxmlb')
+endif
+
 if valgrind.found()
   conf.set('HAVE_VALGRIND', '1')
 endif
@@ -317,6 +329,7 @@ if default_sysconfdir == 'etc'
 endif
 
 plugin_deps = []
+plugin_deps += libxmlb
 plugin_deps += gio
 plugin_deps += giounix
 plugin_deps += gmodule
@@ -331,7 +344,6 @@ if get_option('gtkdoc')
   subdir('docs')
 endif
 subdir('libfwupd')
-subdir('libxmlb/src')
 subdir('po')
 if get_option('daemon')
   subdir('policy')

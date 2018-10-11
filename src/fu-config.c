@@ -11,9 +11,7 @@
 #include <glib-object.h>
 #include <gio/gio.h>
 #include <glib/gi18n.h>
-
-#include "xb-builder.h"
-#include "xb-silo-query.h"
+#include <xmlb.h>
 
 #include "fu-common.h"
 #include "fu-config.h"

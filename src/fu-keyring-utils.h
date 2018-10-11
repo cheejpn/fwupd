@@ -7,7 +7,7 @@
 #ifndef __FU_KEYRING_UTILS_H__
 #define __FU_KEYRING_UTILS_H__
 
-#include "xb-node.h"
+#include <xmlb.h>
 
 #include "fu-keyring.h"
 #include "fwupd-enums.h"

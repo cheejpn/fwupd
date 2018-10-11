@@ -45,7 +45,7 @@ libfwupdprivate = static_library(
   include_directories : [
     include_directories('..'),
     include_directories('../libfwupd'),
-    include_directories('../libxmlb/src'),
+    xmlbstaticincs,
   ],
   dependencies : [
     giounix,
@@ -56,6 +56,7 @@ libfwupdprivate = static_library(
     libarchive,
     valgrind,
     uuid,
+    libxmlb,
   ],
   c_args : [
     '-DFU_OFFLINE_DESTDIR=""',
@@ -72,7 +73,7 @@ fwupdmgr = executable(
   include_directories : [
     include_directories('..'),
     include_directories('../libfwupd'),
-    include_directories('../libxmlb/src'),
+    xmlbstaticincs,
   ],
   dependencies : [
     giounix,
@@ -138,7 +139,7 @@ fwupdtool = executable(
   include_directories : [
     include_directories('..'),
     include_directories('../libfwupd'),
-    include_directories('../libxmlb/src'),
+    xmlbstaticincs,
   ],
   dependencies : [
     keyring_deps,
@@ -219,7 +220,7 @@ executable(
   include_directories : [
     include_directories('..'),
     include_directories('../libfwupd'),
-    include_directories('../libxmlb/src'),
+    xmlbstaticincs,
   ],
   dependencies : [
     keyring_deps,
@@ -228,6 +229,7 @@ executable(
     gmodule,
     gudev,
     gusb,
+    libxmlb,
     polkit,
     soup,
     sqlite,
@@ -292,7 +294,7 @@ if get_option('tests')
     include_directories : [
       include_directories('..'),
       include_directories('../libfwupd'),
-      include_directories('../libxmlb/src'),
+      xmlbstaticincs,
     ],
     dependencies : [
       keyring_deps,
@@ -301,6 +303,7 @@ if get_option('tests')
       gmodule,
       gudev,
       gusb,
+      libxmlb,
       soup,
       sqlite,
       valgrind,
@@ -354,7 +357,7 @@ if get_option('introspection')
     include_directories : [
       include_directories('..'),
       include_directories('../libfwupd'),
-      include_directories('../libxmlb/src'),
+      xmlbstaticincs,
     ],
     dependencies : [
       gir_dep,

@@ -8,8 +8,7 @@
 #define __FU_INSTALL_TASK_H
 
 #include <glib-object.h>
-
-#include "xb-node.h"
+#include <xmlb.h>
 
 #include "fu-device.h"
 

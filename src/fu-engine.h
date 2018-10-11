@@ -10,11 +10,10 @@
 G_BEGIN_DECLS
 
 #include <glib-object.h>
+#include <xmlb.h>
 
 #include "fwupd-device.h"
 #include "fwupd-enums.h"
-
-#include "xb-silo.h"
 
 #include "fu-common.h"
 #include "fu-install-task.h"

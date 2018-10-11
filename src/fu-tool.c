@@ -15,8 +15,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <libsoup/soup.h>
-
-#include "xb-silo-query.h"
+#include <xmlb.h>
 
 #include "fu-engine.h"
 #include "fu-plugin-private.h"
